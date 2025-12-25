@@ -292,7 +292,8 @@ body {
 }
 
 .header_section.scrolled {
-    background: linear-gradient(135deg, #000000 0%, #39383b 100%);
+    background: #222831;
+    /* background: linear-gradient(135deg, #000000 0%, #39383b 100%); */
     /* background: rgba(34, 40, 49, 0.95); */
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
