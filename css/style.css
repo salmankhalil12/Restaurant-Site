@@ -290,7 +290,8 @@ body {
 }
 
 .header_section.scrolled {
-    background: rgba(34, 40, 49, 0.95);
+    background: linear-gradient(135deg, #000000 0%, #39383b 100%);
+    /* background: rgba(34, 40, 49, 0.95); */
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
     padding: 10px 0;
@@ -808,6 +809,7 @@ body {
     transition: all var(--transition-medium);
     position: relative;
 }
+
 /* new */
 /* Card same height */
 .food_section .box {
@@ -819,7 +821,8 @@ body {
 /* Image container fixed */
 .food_section .img-box {
     width: 100%;
-    height: 230px; /* SAME HEIGHT FOR ALL */
+    height: 230px;
+    /* SAME HEIGHT FOR ALL */
     overflow: hidden;
     position: relative;
 }
@@ -828,7 +831,8 @@ body {
 .food_section .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* MAGIC LINE */
+    object-fit: cover;
+    /* MAGIC LINE */
 }
 
 /* Content auto adjust */
@@ -1731,7 +1735,7 @@ body {
 }
 
 /* new */
-.customs{
+.customs {
     background-color: #ffffff;
     color: #495057;
     padding: 10px 20px !important;
