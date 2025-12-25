@@ -250,6 +250,8 @@ body {
     animation-delay: 0.5s;
 }
 
+
+
 /*  ============================================ HEADER STYLES */
 .hero_area {
     position: relative;
@@ -1763,3 +1765,4 @@ body {
     box-shadow: 0 0 12px rgba(230,57,70,0.4);
     transform: scale(1.02);
 }
+
