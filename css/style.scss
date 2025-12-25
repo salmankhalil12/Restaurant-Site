@@ -467,6 +467,22 @@ a:focus {
 
 
 // food section
+#feedback textarea.form-control {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+    resize: none;
+    transition: 0.3s;
+}
+
+#feedback textarea.form-control:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 12px rgba(230,57,70,0.4);
+    transform: scale(1.02);
+}
+
+
 
 .food_section {
 
