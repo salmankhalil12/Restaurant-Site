@@ -1766,3 +1766,13 @@ body {
     transform: scale(1.02);
 }
 
+.bg{
+    background: #222831;
+    border-bottom: 1px solid #949393;
+}
+.logo-img{
+    width: 150px;
+    height: 75px;
+    object-fit: fill;
+
+}
