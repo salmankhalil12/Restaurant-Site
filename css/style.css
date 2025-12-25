@@ -1752,8 +1752,8 @@ body {
 }
 
 #feedback textarea.form-control {
-    background: rgba(255,255,255,0.08);
-    color: #fff;
+    /* background: rgba(255,255,255,0.08); */
+    color: #191919;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.15);
     resize: none;
