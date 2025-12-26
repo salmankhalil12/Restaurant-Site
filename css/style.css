@@ -1681,6 +1681,11 @@ body {
     }
 }
 
+@media (max-width:568px) {
+    .map_container{
+        min-height: 100%;
+    }
+}
 /* ============================================
        SCROLL TO TOP BUTTON
     ============================================ */
@@ -1772,8 +1777,8 @@ body {
     border-bottom: 1px solid #949393;
 }
 .logo-img{
-    width: 150px;
-    height: 75px;
+    width: 210px;
+    height: 55px;
     object-fit: fill;
 
 }
@@ -1781,4 +1786,13 @@ body {
      max-width: 100%;
     animation: float 3s ease-in-out infinite;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width:425px) {
+    .logo-img{
+    width: 150px;
+    /* height: 55px; */
+    object-fit: fill;
+
+}
 }
