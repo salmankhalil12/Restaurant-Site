@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 });
 
 // ============================================CART FUNCTIONALITY  ============================================
-let cart = JSON.parse(localStorage.getItem('foodpointCart')) || [];
+let cart = JSON.parse(localStorage.getItem('FoodSprintCart')) || [];
 
 // DOM Elements
 const cartToggle = document.getElementById('cartToggle');
@@ -31,7 +31,7 @@ function updateCartUI() {
     setTimeout(() => cartCount.classList.remove('bump'), 300);
 
     // Save to localStorage
-    localStorage.setItem('foodpointCart', JSON.stringify(cart));
+    localStorage.setItem('FoodSprintCart', JSON.stringify(cart));
 
     // Render cart items
     renderCartItems();
