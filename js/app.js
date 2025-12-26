@@ -374,22 +374,3 @@ document.querySelectorAll('.food_section .box').forEach(box => {
 document.getElementById('displayYear').textContent = new Date().getFullYear();
 
 
-// ============================================ OPEN & CLOSE Modal ============================================
-
-const modal = document.getElementById("orderModal");
-const openBtn = document.querySelector(".orderBtn");
-const closeBtn = document.querySelector(".close-modal");
-
-openBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
-});
-
-closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
