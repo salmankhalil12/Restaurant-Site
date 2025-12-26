@@ -25,6 +25,85 @@
 </head>
 
 <body>
+        <!-- FULL SCREEN ORDER MODAL -->
+<div id="orderModal" class="modal-overlay">
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <div class="heading_container" style="margin-bottom: 10px;">
+            <h2>Order Now</h2>
+            <p style="color: rgba(255,255,255,0.8);">
+                Place your order online and enjoy delicious food at home
+            </p>
+        </div>
+
+        <div class="form_container" style="max-width: 100%; width: 100%; margin: auto;">
+            <form id="orderForm">
+
+                <div>
+                    <input type="text" class="form-control" placeholder="Your Full Name" required />
+                </div>
+
+                <div>
+                    <input type="tel" class="form-control" placeholder="Phone Number" required />
+                </div>
+
+                <div>
+                    <input type="email" class="form-control" placeholder="Email Address" required />
+                </div>
+
+                <div>
+                    <input type="text" class="form-control" placeholder="Complete Address (Street, City)" required />
+                </div>
+
+                <div>
+                    <select class="form-control customs" required>
+                        <option value="" disabled selected>Select Food Item</option>
+                        <option>Biryani </option>
+                        <option>Pizza </option>
+                        <option>Burger </option>
+                        <option>Roll</option>
+                        <option>Pasta</option>
+                        <option>Sides </option>
+                        <option>Drink</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select class="form-control customs" required>
+                        <option value="" disabled selected>Quantity</option>
+                        <option>1 Item</option>
+                        <option>2 Items</option>
+                        <option>3 Items</option>
+                        <option>4 Items</option>
+                        <option>5 Items</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select class="form-control customs" required>
+                        <option value="" disabled selected>Payment Method</option>
+                        <option>Cash on Delivery</option>
+                        <option>Debit/Credit Card</option>
+                        <option>Online Wallet</option>
+                    </select>
+                </div>
+
+                <div>
+                    <textarea class="form-control" rows="3" placeholder="Any special instructions? (Optional)"></textarea>
+                </div>
+
+                <div class="btn_box">
+                    <button type="submit">
+                        <i class="fas fa-shopping-cart"></i> Place Order
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loader"></div>
@@ -126,9 +205,7 @@
                                 <span class="cart-count" id="cartCount">0</span>
                             </a>
 
-                            <a href="book.html" class="order_online">
-                                Order Now
-                            </a>
+                             <button class="orderBtn order_online">Order Now</button>
                         </div>
                     </div>
                 </nav>
@@ -1162,7 +1239,27 @@ info@foodsprint.com</span>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
     <script src="/js/app.js"></script>
+   <script>
+        // ============================================ OPEN & CLOSE Modal ============================================
 
+        const modal = document.getElementById("orderModal");
+        const openBtn = document.querySelector(".orderBtn");
+        const closeBtn = document.querySelector(".close-modal");
+
+        openBtn.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 
 </body>
 
